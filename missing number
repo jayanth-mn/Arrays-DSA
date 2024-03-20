@@ -1,0 +1,17 @@
+class Solution(object):
+    def missingNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        a=max=len(nums)
+        nums.sort()
+        for i in range(0,a):
+            if max in nums:
+                max=max-1
+            else:
+                break
+        return max
+            
+                
+            
